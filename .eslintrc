@@ -1,0 +1,118 @@
+{
+    "env":           {
+        "commonjs": true,
+        "es6":      true,
+        "node":     true
+    },
+    "extends":       [ "eslint:recommended" ],
+    "parserOptions": {
+        "ecmaVersion": 8
+    },
+    "parser":        "babel-eslint",
+    "plugins":       [
+        "node"
+    ],
+    "settings":      {
+        "node": {
+            "tryExtensions": [ ".js" ]
+        }
+    },
+    "rules":         {
+        "brace-style":                  [ "error", "stroustrup" ],
+        "camelcase":                    "error",
+        "comma-dangle":                 "error",
+        "comma-spacing":                [
+            "error", {
+                "before": false,
+                "after":  true
+            }
+        ],
+        "key-spacing":                  [
+            "error", {
+                "align":       "value",
+                "beforeColon": false,
+                "afterColon":  true,
+                "mode":        "minimum"
+            }
+        ],
+        "no-alert":                     "warn",
+        "no-console":                   "off",
+        "no-constant-condition":        [
+            "error", {
+                "checkLoops": false
+            }
+        ],
+        "no-duplicate-imports":         "error",
+        "no-extra-semi":                "error",
+        "no-mixed-requires":            "error",
+        "no-multi-spaces":              [
+            "error", {
+                "exceptions": {
+                    "AssignmentExpression":   true,
+                    "ExportNamedDeclaration": true,
+                    "ImportDeclaration":      true,
+                    "Property":               true,
+                    "VariableDeclaration":    true,
+                    "VariableDeclarator":     true
+                }
+            }
+        ],
+        "no-return-assign":             "error",
+        "no-unused-vars":               [
+            "error", {
+                "vars": "all",
+                "args": "none"
+            }
+        ],
+        "no-var":                       "error",
+        "no-warning-comments":          [
+            "warn", {
+                "terms":    [ "@TODO", "@FIXME", "TODO", "FIXME" ],
+                "location": "start"
+            }
+        ],
+        "node/exports-style":           [ "error", "module.exports" ],
+        "node/no-deprecated-api":       "error",
+        "node/no-missing-import":       "error",
+        "node/no-missing-require":      "error",
+        "node/no-unsupported-features": [
+            "error", {
+                "version": 8,
+                "ignores": [
+                    "modules"
+                ]
+            }
+        ],
+        "object-curly-spacing":         [
+            "error", "always", {
+                "arraysInObjects": true
+            }
+        ],
+        "object-property-newline":      [
+            "error", {
+                "allowMultiplePropertiesPerLine": true
+            }
+        ],
+        "object-shorthand":             [
+            "error", "always", {
+                "avoidQuotes": true
+            }
+        ],
+        "prefer-const":                 "error",
+        "one-var":                      [
+            "error", {
+                "initialized": "never"
+            }
+        ],
+        "one-var-declaration-per-line": [ "error", "initializations" ],
+        "quotes":                       [ "error", "single", "avoid-escape" ],
+        "require-await":                "error",
+        "semi":                         [ "error", "always" ],
+        "semi-spacing":                 [
+            "error", {
+                "before": false,
+                "after":  true
+            }
+        ]
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "name":             "koa-trout",
+    "version":          "0.1.0",
+    "description":      "Trie router for Koa",
+    "main":             "index.js",
+    "repository":       "https://github.com/jordansexton/koa-trout",
+    "author":           "Jordan Sexton <jordan@jordansexton.com>",
+    "license":          "MIT",
+    "scripts":          {
+        "lint": "eslint --ext .js ."
+    },
+    "engines":          {
+        "node": ">= 8.3.0"
+    },
+    "dependencies":     {
+        "koa-compose": "^4.0.0",
+        "route-trie":  "^2.2.2"
+    },
+    "devDependencies":  {
+        "babel-eslint":       "^7.2.3",
+        "eslint":             "^4.6.1",
+        "eslint-plugin-node": "^5.1.1",
+        "koa":                "^2.3.0"
+    },
+    "peerDependencies": {
+        "koa": ">=2.0.0"
+    }
+}
