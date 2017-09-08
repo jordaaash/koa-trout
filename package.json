@@ -14,6 +14,7 @@
     },
     "dependencies":     {
         "koa-compose": "^4.0.0",
+        "koa-mount":   "^3.0.0",
         "route-trie":  "^2.2.2"
     },
     "devDependencies":  {
